@@ -101,9 +101,9 @@ public class empleadoDTO {
                     String apellidoBD = result.getString("apellido"); //formato apellido
                     Date fechaNacimientoBD = result.getDate("fecha_nacimiento"); //formato fecha_fabricacion
                     Integer id_sueldoBD = result.getInt("id_sueldo");
-                    System.out.println("puertas: " + nombreBD + //imprimimos los Formatos
-                    " marca: " + apellidoBD +
-                    " fechaFabricacion: " + fechaNacimientoBD +
+                    System.out.println("Nombre: " + nombreBD + //imprimimos los Formatos
+                    " Apellido: " + apellidoBD +
+                    " Fecha de nacimiento: " + fechaNacimientoBD +
                     " id_sueldo: " + id_sueldoBD);
                 }
             } catch (SQLException e) {
