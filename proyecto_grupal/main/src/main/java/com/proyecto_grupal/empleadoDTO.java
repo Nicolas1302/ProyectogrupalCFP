@@ -30,7 +30,7 @@ public class empleadoDTO {
 
             try(Connection con = DriverManager.getConnection(BD_Conexion, Usuario_BD, Contrasena_BD);
             Statement stmt = con.createStatement()){
-                String query = "select * from proyectogrupal.sueldo e;";/
+                String query = "select * from proyectogrupal.sueldo e;";
                 ResultSet result = stmt.executeQuery(query);
                 while(result.next()){ 
                     Integer id_sueldo=result.getInt("id_sueldo");
