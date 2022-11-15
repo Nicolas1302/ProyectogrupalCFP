@@ -10,4 +10,4 @@ public class DemoBD {
         Empleado.saveEmpleado("Juan", "Domínguez", "1992-02-05", 2);
         Empleado.getEmpleado();
     }
-}
+} 
