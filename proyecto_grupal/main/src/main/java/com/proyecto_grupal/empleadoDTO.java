@@ -12,6 +12,40 @@ public class empleadoDTO {
     static final String Usuario_BD = "root";
     static final String Contrasena_BD = "root";
 
+    //VOID PARA DESPUES LLAMARLO EN DEMODB
+    public void saveValorHora(int valorHora, int valorHoraExtra){
+        try(Connection con = DriverManager.getConnection(BD_Conexion, Usuario_BD, Contrasena_BD);
+        Statement stmt = con.createStatement()){
+            String query = "INSERT INTO proyectogrupal.valor_hora (valorHora,valorHoraExtra) VALUES ('" + valorHora + "','" + valorHoraExtra + "');";
+            stmt.executeUpdate(query); 
+
+            System.out.println("Persistio en base de datos.");
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+    }
+
+    //VOID PARA DESPUES LLAMARLO EN DEMODB
+    public void getValorHora(){
+
+        try(Connection con = DriverManager.getConnection(BD_Conexion, Usuario_BD, Contrasena_BD);
+        Statement stmt = con.createStatement()){
+            String query = "select * from proyectogrupal.valor_hora e;";
+            ResultSet result = stmt.executeQuery(query);
+            while(result.next()){ 
+                int id_hora = result.getInt("id_hora");
+                int valorHora = result.getInt("valorHora"); 
+                int valorHoraExtra = result.getInt("valorHoraExtra"); 
+                System.out.println("Valor Hora: " + valorHora + 
+                " Valor Hora Extra : " + valorHoraExtra +
+                " id_hora: " + id_hora);
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+    }
+
+
     //VOID PARA DESPUES LLAMARLO EN DEMOBD
     public void saveSueldo(Integer sueldoBruto, Integer sueldoNeto){
         try(Connection con = DriverManager.getConnection(BD_Conexion, Usuario_BD, Contrasena_BD);
