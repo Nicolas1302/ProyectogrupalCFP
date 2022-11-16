@@ -10,10 +10,10 @@ public class salario {
     }
 
     public int getSueldoBruto() {
-        return sueldoBruto;
+        return this.sueldoBruto;
     }
     public int getSueldoNeto() {
-        return sueldoNeto;
+        return this.sueldoNeto;
     }
     public void setSueldoBruto(int sueldoBruto) {
         this.sueldoBruto = sueldoBruto;
