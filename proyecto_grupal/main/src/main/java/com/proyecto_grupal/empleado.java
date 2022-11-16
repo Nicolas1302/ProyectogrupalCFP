@@ -14,15 +14,15 @@ public class empleado {
     }
     
     public String getNombre() {
-        return nombre;
+        return this.nombre;
     }
 
     public String getApellido() {
-        return apellido;
+        return this.apellido;
     }
 
     public String getFecha_nacimiento() {
-        return fecha_nacimiento;
+        return this.fecha_nacimiento;
     }
 
     public void setNombre(String nombre) {

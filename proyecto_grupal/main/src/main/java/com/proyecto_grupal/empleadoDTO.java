@@ -44,8 +44,6 @@ public class empleadoDTO {
             e.printStackTrace();
         }
     }
-
-
     //VOID PARA DESPUES LLAMARLO EN DEMOBD
     public void saveSueldo(Integer sueldoBruto, Integer sueldoNeto){
         try(Connection con = DriverManager.getConnection(BD_Conexion, Usuario_BD, Contrasena_BD);
