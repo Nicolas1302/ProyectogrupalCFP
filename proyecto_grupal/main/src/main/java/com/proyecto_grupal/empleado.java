@@ -7,10 +7,10 @@ public class empleado {
     private String apellido;
     private String fecha_nacimiento;
 
-    public empleado(){
-        this.nombre = "Thiago";
-        this.apellido = "Moreno";
-        this.fecha_nacimiento = "1984-04-14";
+    public empleado(String newNombre, String newApellido, String newFecha_nacimiento){
+        this.nombre = newNombre;
+        this.apellido = newApellido;
+        this.fecha_nacimiento = newFecha_nacimiento;
     }
     
     public String getNombre() {
