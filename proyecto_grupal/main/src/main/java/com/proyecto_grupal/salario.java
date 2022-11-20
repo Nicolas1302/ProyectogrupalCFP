@@ -4,9 +4,9 @@ public class salario {
     private int sueldoNeto;
     private int sueldoBruto;
 
-    public salario(){
-        this.sueldoNeto = 40000;
-        this.sueldoBruto = 46000;
+    public salario(int newSueldoNeto, int newSueldoBruto){
+        this.sueldoNeto = newSueldoNeto;
+        this.sueldoBruto = newSueldoBruto;
     }
 
     public int getSueldoBruto() {
