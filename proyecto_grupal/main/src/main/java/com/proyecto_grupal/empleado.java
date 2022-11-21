@@ -1,7 +1,5 @@
 package com.proyecto_grupal;
 
-
-
 public class empleado {
     private String nombre;
     private String apellido;
@@ -36,5 +34,4 @@ public class empleado {
     public void setFecha_nacimiento(String fecha_nacimiento) {
         this.fecha_nacimiento = fecha_nacimiento;
     }
-    
 }

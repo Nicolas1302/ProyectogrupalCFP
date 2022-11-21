@@ -1,15 +1,13 @@
 package com.proyecto_grupal;
 
+import java.util.ArrayList;
+
 public class DemoBD {
     public static void main( String[] args ){
 
-        empleadoDTO Empleado = new empleadoDTO();
+        empleadoDTO empleadoDTO = new empleadoDTO();
+        ArrayList<empleado> empleadoBase = empleadoDTO.getEmpleado();
 
-        Empleado.getValorHora();
-        Empleado.saveValorHora(3000,5000);
-        Empleado.saveSueldo(10000,150000);
-        Empleado.getSueldo();
-        Empleado.saveEmpleado("Juan", "Domínguez", "1992-02-05", 2);
-        Empleado.getEmpleado();
+        System.out.println(empleadoBase);
     }
 } 
