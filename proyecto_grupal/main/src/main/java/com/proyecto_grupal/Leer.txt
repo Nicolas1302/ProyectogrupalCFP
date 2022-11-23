@@ -1,44 +1,33 @@
-create database proyectogrupal
-
-//creo tabla sueldo
-
-CREATE TABLE proyectogrupal.sueldo (
-	id_sueldo INT auto_increment NOT NULL,
-	sueldoBruto INT NULL,
-	sueldoNeto INT NULL,
-	CONSTRAINT sueldo_PK PRIMARY KEY (id_sueldo))
-
-//creo la tabla empleado
-
+#CREO BASE DE DATOS
+CREATE DATABASE proyectogrupal;
+#CREO TABLA EMPLEADO
 CREATE TABLE proyectogrupal.empleado (
 	id_empleado INT auto_increment NOT NULL,
 	nombre varchar(30) NULL,
 	apellido varchar(30) NULL,
 	fecha_nacimiento DATE NULL,
-	id_sueldo INT NULL,
-	CONSTRAINT empleado_PK PRIMARY KEY (id_empleado),
-	CONSTRAINT empleado_FK FOREIGN KEY (id_sueldo) REFERENCES proyectogrupal.sueldo(id_sueldo)
-)
-
-//creo la tabla valor_hora
-
-CREATE TABLE proyectogrupal.valor_hora (
-	id_hora INT auto_increment NOT NULL,
-	valorHora INT NULL,
-	valorHoraExtra INT NULL,
-	CONSTRAINT valor_hora_PK PRIMARY KEY (id_hora)
-)
-
-//creo la tabla jornada laboral
-
+	CONSTRAINT empleado_PK PRIMARY KEY (id_empleado));
+#CREO TABLA JORNADA LABORAL
 CREATE TABLE proyectogrupal.jornadaLaboral (
 	id_jornada INT auto_increment NOT NULL,
 	diaLaboral ENUM ('lunes','martes','miercoles','jueves','viernes') NULL,
 	horario_entrada TIME NULL,
 	horario_salida TIME NULL,
 	id_empleado INT NULL,
-	id_hora INT NULL,
 	CONSTRAINT jornadaLaboral_PK PRIMARY KEY (id_jornada),
-	CONSTRAINT jornadaLaboral_FK FOREIGN KEY (id_empleado) REFERENCES proyectogrupal.empleado(id_empleado),
-	CONSTRAINT jornadaLaboral_FK_1 FOREIGN KEY (id_hora) REFERENCES proyectogrupal.valor_hora(id_hora)
-)
+	CONSTRAINT jornadaLaboral_FK FOREIGN KEY (id_empleado) REFERENCES proyectogrupal.empleado(id_empleado));
+#CREO TABLA SUELDO
+CREATE TABLE proyectogrupal.Sueldo (
+	id_sueldo INT auto_increment NOT NULL,
+	sueldoBruto INT NULL,
+	sueldoNeto INT NULL,
+	id_empleado INT NULL,
+	CONSTRAINT Sueldo_PK PRIMARY KEY (id_sueldo),
+	CONSTRAINT Sueldo_FK FOREIGN KEY (id_empleado) REFERENCES proyectogrupal.empleado(id_empleado));
+
+#IMPORTANTE DE DBEAVER 
+#HACER 2 CLIC SOBRE Databases
+#IR A EditorSQL en la parte superior
+#seleccionar Nuevo Script SQL
+#pegar Este CODIGO
+#PARA EJECUTAR Y CREAR TODO DE UNA SELECCIONAR Ejecutar Script SQL o presiona ALT+X
