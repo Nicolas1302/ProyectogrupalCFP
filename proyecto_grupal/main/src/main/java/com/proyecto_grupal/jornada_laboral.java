@@ -41,7 +41,7 @@ public class jornada_laboral {
     public void setHorario_salida(Integer horario_salida) {
         this.horario_salida = horario_salida;
     }
-    public void setHorario_salida(int id_empleado) {
+    public void setId_empleado(int id_empleado) {
         this.id_empleado = id_empleado;
     }
     
