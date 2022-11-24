@@ -1,6 +1,6 @@
 package com.proyecto_grupal;
 
-import java.sql.Date;
+
 
 public class empleado {
     private String nombre;
@@ -41,5 +41,11 @@ public class empleado {
 
     public String toString(){
         return this.nombre + " " + this.apellido +" " +this.fecha_nacimiento+" ";
+    }
+
+
+
+    public empleado getClass(int x) {
+        return null;
     }
 }

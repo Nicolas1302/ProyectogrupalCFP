@@ -5,11 +5,7 @@ import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
-import java.sql.Time;
 import java.util.ArrayList;
-import java.util.Date;
-import java.util.HashMap;
-import java.util.Map;
 
 public class empleadoDTO {
     static final String BD_Conexion = "jdbc:mysql://localhost:3306/";
@@ -30,33 +26,33 @@ public class empleadoDTO {
         }
 
         /*Creamos un Arraylist que obtendrá los empleados que creemos en DemoEmpleado*/
-        public Map<Integer,empleado> getEmpleado(){
+        public ArrayList<empleado> getEmpleado(){
         EmpleadoMapping empleadoMapping = new EmpleadoMapping();
-        //ArrayList<empleado> empleados = new ArrayList<empleado>();
-        Map<Integer,empleado> empleadosMap = new HashMap<Integer,empleado>();
+        ArrayList<empleado> empleados = new ArrayList<empleado>();
+        //Map<Integer,empleado> empleadosMap = new HashMap<Integer,empleado>();
         
             try(Connection con = DriverManager.getConnection(BD_Conexion, Usuario_BD, Contrasena_BD);
             Statement stmt = con.createStatement()){
                 String query = "select * from proyectogrupal.empleado e;";//nombre de base es proyectogrupal tabla empleado
                 ResultSet result = stmt.executeQuery(query);
                 while(result.next()){ //Con el While le damos un Formato en java con los resultados que nos trae de la tabla
-                    int id_empleado = result.getInt("id_empleado");
+                    //int id_empleado = result.getInt("id_empleado");
                     String nombreBD = result.getString("nombre"); //formato nombre
                     String apellidoBD = result.getString("apellido"); //formato apellido
                     java.sql.Date fechaNacimientoBD = result.getDate("fecha_nacimiento"); //formato fecha_fabricacion
-                    //empleados.add(empleadoMapping.mapEmpleado(nombreBD, apellidoBD, fechaNacimientoBD));
-                    empleadosMap.put(id_empleado,empleadoMapping.mapEmpleado(nombreBD, apellidoBD, fechaNacimientoBD));    
+                    empleados.add(empleadoMapping.mapEmpleado(nombreBD, apellidoBD, fechaNacimientoBD));
+                    //empleadosMap.put(id_empleado,empleadoMapping.mapEmpleado(nombreBD, apellidoBD, fechaNacimientoBD));    
                 }
                 //System.out.println(empleadosMap.get(1) );
             } catch (SQLException e) {
                 e.printStackTrace();
             }
-            return empleadosMap;
+            return empleados;
         }
 
 
         //VOID PARA DESPUES LLAMARLO EN DEMOBD
-    public void savejornada_laboral(String dialaboral, Time horario_entrada, Time horario_salida, int id_empleado){
+    public void savejornada_laboral(String dialaboral, int horario_entrada, int horario_salida, int id_empleado){
         try(Connection con = DriverManager.getConnection(BD_Conexion, Usuario_BD, Contrasena_BD);
         Statement stmt = con.createStatement()){
             String query = "INSERT INTO proyectogrupal.jornadaLaboral (diaLaboral,horario_entrada,horario_salida,id_empleado) VALUES ('" + dialaboral + "','" + horario_entrada + "','" + horario_salida + "','" + id_empleado + "');";

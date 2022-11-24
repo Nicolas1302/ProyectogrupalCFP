@@ -1,0 +1,43 @@
+/*LIAN
+jornadalaboral.add(new jornadalaboral(lunes, 9:00:00, 18:00:00, 6));
+jornadalaboral.add(new jornadalaboral(martes, 10:00:00, 18:00:00, 6));
+jornadalaboral.add(new jornadalaboral(miercoles, 9:00:00, 16:00:00, 6));
+jornadalaboral.add(new jornadalaboral(jueves, 9:00:00, 18:00:00, 6));
+jornadalaboral.add(new jornadalaboral(viernes, 9:00:00, 18:00:00, 6)); 
+POLY
+"Paula", "Dominguez", "22/05/1984"
+JornadaLaboral.add(new jornada_laboral("Lunes",09:00:00,21:00:00));
+JornadaLaboral.add(new jornada_laboral("Martes",09:00:00,21:00:00));   
+JornadaLaboral.add(new jornada_laboral("Miercoles",09:00:00,18:00:00));
+JornadaLaboral.add(new jornada_laboral("Jueves",09:00:00,21:00:00));
+JornadaLaboral.add(new jornada_laboral("Viernes",09:00:00,21:00:00));
+ariel
+empleados.add(new empleado("Ariel", "Cook", "13/05/1997"));
+JornadaLaboral.add(new jornada_laboral("Lunes", 09:00:00, 18:00:00));
+JornadaLaboral.add(new jornada_laboral("Martes", 09:00:00, 20:00:00));
+JornadaLaboral.add(new jornada_laboral("Miercoles", 09:00:00, 21:00:00));
+JornadaLaboral.add(new jornada_laboral("Jueves", 09:00:00, 18:00:00));
+JornadaLaboral.add(new jornada_laboral("Viernes", 09:00:00, 19:00:00));
+OSCAR 
+empleados.add(new empleado("Oscar", "Esquivel", "24/05/1990"));
+JornadaLaboral.add(new jornada_laboral("Lunes", 09:00:00, 20:00:00));
+JornadaLaboral.add(new jornada_laboral("Martes", 09:00:00, 21:00:00));
+JornadaLaboral.add(new jornada_laboral("Miercoles", 09:00:00, 20:00:00));
+JornadaLaboral.add(new jornada_laboral("Jueves", 09:00:00, 18:00:00));
+JornadaLaboral.add(new jornada_laboral("Viernes", 09:00:00, 18:00:00));
+ALEX
+empleados.add(new empleado("Alex", "Stephan", "07/12/1993"));
+JornadaLaboral.add(new jornada_laboral("Lunes", 09:00:00, 18:00:00));
+JornadaLaboral.add(new jornada_laboral("Martes", 09:00:00, 18:00:00));
+JornadaLaboral.add(new jornada_laboral("Miercoles", 09:00:00, 18:00:00));
+JornadaLaboral.add(new jornada_laboral("Jueves", 09:00:00, 20:00:00));
+JornadaLaboral.add(new jornada_laboral("Viernes", 09:00:00, 20:00:00));
+
+AGREGO LOS eMPLEADOS A LA bASE DE DATOS
+empleadoDTO.saveEmpleado("nicolas", "ayala","1992-06-30");
+empleadoDTO.saveEmpleado("Elian", "Zás", "1995-09-19");
+empleadoDTO.saveEmpleado("Paula", "Dominguez", "1984-05-22");
+empleadoDTO.saveEmpleado("Ariel", "Cook", "1997-05-13");
+empleadoDTO.saveEmpleado("Oscar", "Esquivel", "1990-05-24");
+empleadoDTO.saveEmpleado("Alex", "Stephan", "1993-12-07");
+*/
