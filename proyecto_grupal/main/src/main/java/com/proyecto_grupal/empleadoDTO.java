@@ -64,7 +64,28 @@ public class empleadoDTO {
         }
     }
     
+    public ArrayList<jornada_laboral> getJornada(){
+        jornada_laboral jornadaMapping = new jornadaMapping();
+        ArrayList<jornada_laboral> jornada = new ArrayList<jornada_laboral>();
+        
+        try(Connection con = DriverManager.getConnection(BD_Conexion, Usuario_BD, Contrasena_BD);
+        Statement stmt = con.createStatement()){
+            String query = "select * from proyectogrupal.empleado e;";
+            ResultSet result = stmt.executeQuery(query);
+            while(result.next()){
+                String diaLaboraBDl = result.getString("diaLaboral"); 
+                int horario_entradaBD = result.getInt("horario_entrada"); 
+                int horario_salidaBD = result.getInt("horario_salida"); 
+                int id_empleadoBD = result.getInt("id_empleado"); 
+                jornada.add(jornadaMapping.mapjornada(diaLaboraBDl, horario_entradaBD, horario_salidaBD,id_empleadoBD));
+            }
 
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return jornada;
+    }
+    
     
 
 
