@@ -15,7 +15,7 @@ public class jornadaService {
     }
 
     public void validateAndSaveJornada(jornada_laboral jornada){
-        if(jornada.getHorario_entrada() > 1669150800){
+        if(jornada.getHorario_salida() > 1669150800){
             System.out.println("ERROR: Exede el horario extra permitido.");
         } else {
             JornadaDTO.savejornada_laboral(jornada.getDiaLaboral(), jornada.getHorario_entrada() , jornada.getHorario_salida(), jornada.getid_empleado()); 
