@@ -12,7 +12,9 @@ public class empleadoService {
     }
 
     public void validateAndSaveEmpleado(empleado empleado){
-        if(empleado.getApellido() == null ){
+        if(empleado.getNombre() == null ){
+            System.out.println("ERROR: coloque el Nombre");
+        }if(empleado.getApellido() == null ){
             System.out.println("ERROR: coloque el apellido");
         } else {
             EmpleadoDTO.saveEmpleado(empleado.getNombre(), empleado.getApellido(), empleado.getFecha_nacimiento());
