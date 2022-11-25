@@ -1,13 +1,12 @@
 package com.proyecto_grupal;
 
-import java.sql.Time;
-import java.util.Map;
+
 
 
 public class DemoBD {
     public static void main( String[] args ){
 
-        empleadoDTO empleadoDTO = new empleadoDTO();
+        //empleadoDTO empleadoDTO = new empleadoDTO();
         
         
         
@@ -26,5 +25,18 @@ public class DemoBD {
 
         
         //this.horario_salida =Time.valueOf("23:00:00"); formato agregar hora
+
+        /*fecha:2022-11-24
+        hora 00:00 = 1669248000
+
+        entrada: 1669276800 -8hs
+        
+        entrada: 1669280400 - 9hs 
+
+        salida: 1669309200 17hs 
+
+        salida: 1669312800 18hs
+
+        salida: 1669323600 21hs */
     }
 } 

@@ -44,5 +44,10 @@ public class jornada_laboral {
     public void setId_empleado(int id_empleado) {
         this.id_empleado = id_empleado;
     }
+    public String toString(){
+        return this.diaLaboral + " " + this.horario_entrada +" " +this.horario_salida +" "+this.id_empleado +" ";
+    }
+
+
     
 }

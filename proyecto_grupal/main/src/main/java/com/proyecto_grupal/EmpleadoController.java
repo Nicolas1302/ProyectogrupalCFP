@@ -11,7 +11,7 @@ import org.json.simple.parser.JSONParser;
 
 
 
-public class EmplaedoController {
+public class EmpleadoController {
     public static void main( String[] args ){
 
        

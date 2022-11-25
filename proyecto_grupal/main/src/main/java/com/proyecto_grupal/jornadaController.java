@@ -1,20 +1,25 @@
 package com.proyecto_grupal;
 
+import java.io.FileReader;
+import org.json.simple.JSONArray;
+import org.json.simple.JSONObject;
+import org.json.simple.parser.JSONParser;
+
 public class jornadaController {
     public static void main( String[] args ){
-        empladoService empleadoService = new empladoService();
+        jornadaService jornadaService = new jornadaService();
 
         JSONParser jsonParser = new JSONParser();
         jornadaBuilder jornadaBuilder = new jornadaBuilder();
 
         try(FileReader reader = new FileReader("proyecto_grupal/jornada.json")){
             Object obj = jsonParser.parse(reader);
-            JSONArray jsonEmpleados = (JSONArray) obj;
-            jornada_laboral empleado = jornadaBuilder.builderjornada((JSONObject)jsonEmpleados.get(0));
-            System.out.println(jornada_laboral);
+            JSONArray jsonJornada = (JSONArray) obj;
+            jornada_laboral jornadalaboral = jornadaBuilder.builderjornada((JSONObject)jsonJornada.get(0));
+            System.out.println(jornadalaboral);
             
             
-            empleadoService.validateAndSaveEmpleado(jornada_laboral);
+            jornadaService.validateAndSaveEmpleado(jornadalaboral);
 
         } catch (Exception e){
             e.printStackTrace();
