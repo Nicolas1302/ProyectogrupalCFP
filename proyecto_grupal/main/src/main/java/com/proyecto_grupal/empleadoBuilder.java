@@ -12,12 +12,6 @@ public class empleadoBuilder {
         String fecha_nacimiento = (String) empleado.get("fecha_nacimiento");
 
         empleado resultEmpleado = new empleado(nombre, apellido, fecha_nacimiento);
-        return resultEmpleado;
-        
-    }
-           
-        
-        
+        return resultEmpleado;   
+    }        
 }
-    
-
