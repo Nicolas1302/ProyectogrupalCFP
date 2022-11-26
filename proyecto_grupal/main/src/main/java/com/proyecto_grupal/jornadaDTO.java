@@ -12,7 +12,7 @@ public class jornadaDTO {
     static final String Usuario_BD = "root";
     static final String Contrasena_BD = "root";
 
-    public void saveJornada(String diaLaboral, int horario_entrada, int horario_salida, int id_empleado){
+    public void savejornada_laboral(String diaLaboral, int horario_entrada, int horario_salida, int id_empleado){
 
         try(Connection con = DriverManager.getConnection(BD_Conexion, Usuario_BD, Contrasena_BD);
         Statement stmt = con.createStatement()){
