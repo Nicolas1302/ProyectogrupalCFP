@@ -24,7 +24,7 @@ public class EmpleadoController {
         JSONParser jsonParser = new JSONParser();
         empleadoBuilder empleadoBuilder = new empleadoBuilder();
 
-        try(FileReader reader = new FileReader("empleados.json")){
+        try(FileReader reader = new FileReader("./proyecto_grupal/empleados.json")){
             ArrayList<empleado> empleados = new ArrayList<empleado>();
             Object obj = jsonParser.parse(reader);
             JSONArray jsonEmpleados = (JSONArray) obj;
