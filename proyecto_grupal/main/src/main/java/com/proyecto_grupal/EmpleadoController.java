@@ -1,6 +1,8 @@
 package com.proyecto_grupal;
 
 import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.IOException;
 import java.util.ArrayList;
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
@@ -11,37 +13,44 @@ public class EmpleadoController {
         empleadoService empleadoService = new empleadoService();
         ArrayList<empleado> empleadoBase = empleadoService.getEmpleados();
 
+        JSONObject empleadoss = new JSONObject();
+
         int x = 0;
         while(x < empleadoBase.size() - 1){ 
+
             JSONObject Empleado = new JSONObject();
-            Empleado.put("Nombre", empleadoBase.get(x).getNombre());
-            Empleado.put("Apellido", empleadoBase.get(x).getApellido());
-            Empleado.put("FechaNacimiento",empleadoBase.get(x).getFecha_nacimiento());
-            Empleado.put(x,Empleado);
+            
+            Empleado.put("nombre", empleadoBase.get(x).getNombre());
+            Empleado.put("apellido", empleadoBase.get(x).getApellido());
+            Empleado.put("fecha_nacimiento",empleadoBase.get(x).getFecha_nacimiento());
+            
+            empleadoss.put(x,Empleado);
+            System.out.println();
             x++;
         }
 
+        JSONArray EmpleadosList = new JSONArray();
+
+        EmpleadosList.add(empleadoss);
+
+        try(FileWriter file = new FileWriter("EmpleadosBase.json")){
+            file.write(EmpleadosList.toJSONString());
+            file.flush();
+        } catch (IOException e){
+            e.printStackTrace();
+        }
+        /*
         JSONParser jsonParser = new JSONParser();
         empleadoBuilder empleadoBuilder = new empleadoBuilder();
 
-        try(FileReader reader = new FileReader("empleados.json")){
-            ArrayList<empleado> empleados = new ArrayList<empleado>();
+        try(FileReader reader = new FileReader("proyecto_grupal/empleados.json")){
             Object obj = jsonParser.parse(reader);
             JSONArray jsonEmpleados = (JSONArray) obj;
-            for (x = 0; x < jsonEmpleados.size(); x++){
-                empleado empleado1 = empleadoBuilder.builderEmpleado((JSONObject)jsonEmpleados.get(x),"" + x);
-                System.out.println(empleado1);
-                System.out.println(x);
-                empleados.add(empleado1);
-                }
-    
-                int indice = 0;
-            while(indice < empleados.size()){
-            empleadoService.validateAndSaveEmpleado(empleados.get(indice));
-            indice++;
-            }
+            empleado empleado1 = empleadoBuilder.builderEmpleado((JSONObject)jsonEmpleados.get(0));
+            System.out.println(empleado1);
+            empleadoService.validateAndSaveEmpleado(empleado1);
         } catch (Exception e){
             e.printStackTrace();
-        }
-    }
+        }*/
+    } 
 }

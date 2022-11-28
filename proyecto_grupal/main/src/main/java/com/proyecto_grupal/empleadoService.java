@@ -10,7 +10,7 @@ public class empleadoService {
         ArrayList<empleado> empleados = EmpleadoDTO.getEmpleado ();
         return empleados;
     }
-
+    
     public void validateAndSaveEmpleado(empleado empleado){
         if(empleado.getNombre() == null ){
             System.out.println("ERROR: coloque el Nombre");
