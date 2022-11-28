@@ -8,8 +8,8 @@ import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 public class EmpleadoController {
-    public static void main( String[] args ){
-        
+
+    public void getEmpleado(){
         empleadoService empleadoService = new empleadoService();
         ArrayList<empleado> empleadoBase = empleadoService.getEmpleados();
 
@@ -39,7 +39,10 @@ public class EmpleadoController {
         } catch (IOException e){
             e.printStackTrace();
         }
-        /*
+    }
+    public void postEmpleado(){
+        empleadoService empleadoService = new empleadoService();
+        ArrayList<empleado> empleadoBase = empleadoService.getEmpleados();
         JSONParser jsonParser = new JSONParser();
         empleadoBuilder empleadoBuilder = new empleadoBuilder();
 
@@ -51,6 +54,6 @@ public class EmpleadoController {
             empleadoService.validateAndSaveEmpleado(empleado1);
         } catch (Exception e){
             e.printStackTrace();
-        }*/
+        }
     } 
 }

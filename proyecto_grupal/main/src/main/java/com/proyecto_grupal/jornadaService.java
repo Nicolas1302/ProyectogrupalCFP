@@ -22,20 +22,17 @@ public class jornadaService {
         int horaextra = 0;
         if(hora.gettotal_horas()>18){
             horaextra = ((hora.gettotal_horas() - 18) * 5000) + (18 * 3000);
-            
         }
-        
-        
     }
 
 
 
-    public void validateAndSaveEmpleado(jornada_laboral jornada){
+    public void validateAndSaveJornada(jornada_laboral jornada){
         if(jornada.getHorario_entrada() < 1669280400 ){  //fecha en Segundos tomada del Dia 2022-11-24
-            System.out.println("ERROR: A partir de la 09:00 puede darce Entrada");
-            System.out.println("hora actual es:  " + (jornada.getHorario_entrada() - 1669248000)/3600 +" HS");
+            System.out.println("ERROR: A partir de las 09:00 puede darse Entrada");
+            System.out.println("Hora actual:  " + (jornada.getHorario_entrada() - 1669248000)/3600 +" HS");
         }if(jornada.getHorario_salida() > 1669323600){
-            System.out.println("ERROR: Exede el horario extra permitido.");
+            System.out.println("ERROR: Excede el horario extra permitido.");
         }else {
             JornadaDTO.savejornada_laboral(jornada.getDiaLaboral(), jornada.getHorario_entrada() , jornada.getHorario_salida(), jornada.getid_empleado()); 
             System.out.println("OK");
