@@ -12,8 +12,8 @@ public class App
         EmpleadoController EmpleadoController = new EmpleadoController();
         EmpleadoController.postEmpleado();
         // EmpleadoController.postEmpleado();
-        //JornadaController.getjornada();
-        JornadaController.postJornada();
+        JornadaController.getjornada();
+        //JornadaController.postJornada();
         // JornadaController.getSueldo();
 
     }    
