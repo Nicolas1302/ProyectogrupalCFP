@@ -15,6 +15,26 @@ public class EmpleadoController {
 
         JSONObject empleadoss = new JSONObject();
 
+        /*PARA CREAR EMPLEADOS VARIOS DENTRO DEL JSON CON EL GET */
+        // ArrayList<empleado> empleados = new ArrayList<empleado>();
+
+        // empleados.add(new empleado("Juan", "Perez", "1999-05-12"));
+        // empleados.add(new empleado("Elian", "Zas", "1998-08-19"));
+        // empleados.add(new empleado("Nicolas", "Ayala", "1996-08-19"));
+
+
+        // int x = 0;
+        // for(x=0;x<= empleados.size()-1;x++){ 
+        //         JSONObject Empleado = new JSONObject();
+                
+        //         Empleado.put("nombre", empleados.get(x).getNombre());
+        //         Empleado.put("apellido", empleados.get(x).getApellido());
+        //         Empleado.put("fecha_nacimiento", empleados.get(x).getFecha_nacimiento());
+
+        //         empleadoss.put(x,Empleado);
+        //         System.out.println();
+        //     }       
+
         int x = 0;
         while(x < empleadoBase.size() - 1){ 
 
