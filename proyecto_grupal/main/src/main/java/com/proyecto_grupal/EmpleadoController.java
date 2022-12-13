@@ -15,6 +15,7 @@ public class EmpleadoController {
     public void getEmpleado(){ 
         ArrayList<empleado> empleadoBase = empleadoService.getEmpleados();
         JSONObject empleadoss = new JSONObject();
+
         int x = 0;
         while(x < empleadoBase.size()){ 
             JSONObject Empleado = new JSONObject();         

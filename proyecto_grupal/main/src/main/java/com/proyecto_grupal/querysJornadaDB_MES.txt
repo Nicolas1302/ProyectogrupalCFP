@@ -1,0 +1,158 @@
+#COPIAR Y PEGAR todo en DBEAVER.
+#EJECUTAR todas las querys juntas cuando ya esté finalizada la carga de empleados.
+
+#id_empleado 1
+
+INSERT INTO proyectogrupal.jornadalaboral(diaLaboral,horario_entrada,horario_salida,id_empleado) VALUES ("lunes", 1669280400, 1669312800,1);
+INSERT INTO proyectogrupal.jornadalaboral(diaLaboral,horario_entrada,horario_salida,id_empleado) VALUES ("martes", 1669280400, 1669320000,1);
+INSERT INTO proyectogrupal.jornadalaboral(diaLaboral,horario_entrada,horario_salida,id_empleado) VALUES ("miercoles", 1669280400, 1669323600,1);
+INSERT INTO proyectogrupal.jornadalaboral(diaLaboral,horario_entrada,horario_salida,id_empleado) VALUES ("jueves", 1669280400, 1669312800,1);
+INSERT INTO proyectogrupal.jornadalaboral(diaLaboral,horario_entrada,horario_salida,id_empleado) VALUES ("viernes", 1669280400, 1669316400,1);
+
+INSERT INTO proyectogrupal.jornadalaboral(diaLaboral,horario_entrada,horario_salida,id_empleado) VALUES ("lunes", 1669280400, 1669312800,1);
+INSERT INTO proyectogrupal.jornadalaboral(diaLaboral,horario_entrada,horario_salida,id_empleado) VALUES ("martes", 1669280400, 1669320000,1);
+INSERT INTO proyectogrupal.jornadalaboral(diaLaboral,horario_entrada,horario_salida,id_empleado) VALUES ("miercoles", 1669280400, 1669323600,1);
+INSERT INTO proyectogrupal.jornadalaboral(diaLaboral,horario_entrada,horario_salida,id_empleado) VALUES ("jueves", 1669280400, 1669312800,1);
+INSERT INTO proyectogrupal.jornadalaboral(diaLaboral,horario_entrada,horario_salida,id_empleado) VALUES ("viernes", 1669280400, 1669316400,1);
+
+INSERT INTO proyectogrupal.jornadalaboral(diaLaboral,horario_entrada,horario_salida,id_empleado) VALUES ("lunes", 1669280400, 1669312800,1);
+INSERT INTO proyectogrupal.jornadalaboral(diaLaboral,horario_entrada,horario_salida,id_empleado) VALUES ("martes", 1669280400, 1669320000,1);
+INSERT INTO proyectogrupal.jornadalaboral(diaLaboral,horario_entrada,horario_salida,id_empleado) VALUES ("miercoles", 1669280400, 1669323600,1);
+INSERT INTO proyectogrupal.jornadalaboral(diaLaboral,horario_entrada,horario_salida,id_empleado) VALUES ("jueves", 1669280400, 1669312800,1);
+INSERT INTO proyectogrupal.jornadalaboral(diaLaboral,horario_entrada,horario_salida,id_empleado) VALUES ("viernes", 1669280400, 1669316400,1);
+
+INSERT INTO proyectogrupal.jornadalaboral(diaLaboral,horario_entrada,horario_salida,id_empleado) VALUES ("lunes", 1669280400, 1669312800,1);
+INSERT INTO proyectogrupal.jornadalaboral(diaLaboral,horario_entrada,horario_salida,id_empleado) VALUES ("martes", 1669280400, 1669320000,1);
+INSERT INTO proyectogrupal.jornadalaboral(diaLaboral,horario_entrada,horario_salida,id_empleado) VALUES ("miercoles", 1669280400, 1669323600,1);
+INSERT INTO proyectogrupal.jornadalaboral(diaLaboral,horario_entrada,horario_salida,id_empleado) VALUES ("jueves", 1669280400, 1669312800,1);
+INSERT INTO proyectogrupal.jornadalaboral(diaLaboral,horario_entrada,horario_salida,id_empleado) VALUES ("viernes", 1669280400, 1669316400,1);
+
+#id_empleado 2
+
+INSERT INTO proyectogrupal.jornadalaboral(diaLaboral,horario_entrada,horario_salida,id_empleado) VALUES ("lunes", 1669280400, 1669312800,2);
+INSERT INTO proyectogrupal.jornadalaboral(diaLaboral,horario_entrada,horario_salida,id_empleado) VALUES ("martes", 1669280400, 1669312800,2);
+INSERT INTO proyectogrupal.jornadalaboral(diaLaboral,horario_entrada,horario_salida,id_empleado) VALUES ("miercoles", 1669280400, 1669305600,2);
+INSERT INTO proyectogrupal.jornadalaboral(diaLaboral,horario_entrada,horario_salida,id_empleado) VALUES ("jueves", 1669280400, 1669312800,2);
+INSERT INTO proyectogrupal.jornadalaboral(diaLaboral,horario_entrada,horario_salida,id_empleado) VALUES ("viernes", 1669280400, 1669312800,2);
+
+INSERT INTO proyectogrupal.jornadalaboral(diaLaboral,horario_entrada,horario_salida,id_empleado) VALUES ("lunes", 1669280400, 1669312800,2);
+INSERT INTO proyectogrupal.jornadalaboral(diaLaboral,horario_entrada,horario_salida,id_empleado) VALUES ("martes", 1669280400, 1669312800,2);
+INSERT INTO proyectogrupal.jornadalaboral(diaLaboral,horario_entrada,horario_salida,id_empleado) VALUES ("miercoles", 1669280400, 1669305600,2);
+INSERT INTO proyectogrupal.jornadalaboral(diaLaboral,horario_entrada,horario_salida,id_empleado) VALUES ("jueves", 1669280400, 1669312800,2);
+INSERT INTO proyectogrupal.jornadalaboral(diaLaboral,horario_entrada,horario_salida,id_empleado) VALUES ("viernes", 1669280400, 1669312800,2);
+
+INSERT INTO proyectogrupal.jornadalaboral(diaLaboral,horario_entrada,horario_salida,id_empleado) VALUES ("lunes", 1669280400, 1669312800,2);
+INSERT INTO proyectogrupal.jornadalaboral(diaLaboral,horario_entrada,horario_salida,id_empleado) VALUES ("martes", 1669280400, 1669312800,2);
+INSERT INTO proyectogrupal.jornadalaboral(diaLaboral,horario_entrada,horario_salida,id_empleado) VALUES ("miercoles", 1669280400, 1669305600,2);
+INSERT INTO proyectogrupal.jornadalaboral(diaLaboral,horario_entrada,horario_salida,id_empleado) VALUES ("jueves", 1669280400, 1669312800,2);
+INSERT INTO proyectogrupal.jornadalaboral(diaLaboral,horario_entrada,horario_salida,id_empleado) VALUES ("viernes", 1669280400, 1669312800,2);
+
+INSERT INTO proyectogrupal.jornadalaboral(diaLaboral,horario_entrada,horario_salida,id_empleado) VALUES ("lunes", 1669280400, 1669312800,2);
+INSERT INTO proyectogrupal.jornadalaboral(diaLaboral,horario_entrada,horario_salida,id_empleado) VALUES ("martes", 1669280400, 1669312800,2);
+INSERT INTO proyectogrupal.jornadalaboral(diaLaboral,horario_entrada,horario_salida,id_empleado) VALUES ("miercoles", 1669280400, 1669305600,2);
+INSERT INTO proyectogrupal.jornadalaboral(diaLaboral,horario_entrada,horario_salida,id_empleado) VALUES ("jueves", 1669280400, 1669312800,2);
+INSERT INTO proyectogrupal.jornadalaboral(diaLaboral,horario_entrada,horario_salida,id_empleado) VALUES ("viernes", 1669280400, 1669312800,2);
+
+#id_empleado 3
+
+INSERT INTO proyectogrupal.jornadalaboral(diaLaboral,horario_entrada,horario_salida,id_empleado) VALUES ("lunes", 1669280400, 1669323600,3);
+INSERT INTO proyectogrupal.jornadalaboral(diaLaboral,horario_entrada,horario_salida,id_empleado) VALUES ("martes", 1669280400, 1669323600,3);
+INSERT INTO proyectogrupal.jornadalaboral(diaLaboral,horario_entrada,horario_salida,id_empleado) VALUES ("miercoles", 1669280400, 1669312800,3);
+INSERT INTO proyectogrupal.jornadalaboral(diaLaboral,horario_entrada,horario_salida,id_empleado) VALUES ("jueves", 1669280400, 1669323600,3);
+INSERT INTO proyectogrupal.jornadalaboral(diaLaboral,horario_entrada,horario_salida,id_empleado) VALUES ("viernes", 1669280400, 1669312800,3);
+
+INSERT INTO proyectogrupal.jornadalaboral(diaLaboral,horario_entrada,horario_salida,id_empleado) VALUES ("lunes", 1669280400, 1669323600,3);
+INSERT INTO proyectogrupal.jornadalaboral(diaLaboral,horario_entrada,horario_salida,id_empleado) VALUES ("martes", 1669280400, 1669323600,3);
+INSERT INTO proyectogrupal.jornadalaboral(diaLaboral,horario_entrada,horario_salida,id_empleado) VALUES ("miercoles", 1669280400, 1669312800,3);
+INSERT INTO proyectogrupal.jornadalaboral(diaLaboral,horario_entrada,horario_salida,id_empleado) VALUES ("jueves", 1669280400, 1669323600,3);
+INSERT INTO proyectogrupal.jornadalaboral(diaLaboral,horario_entrada,horario_salida,id_empleado) VALUES ("viernes", 1669280400, 1669312800,3);
+
+INSERT INTO proyectogrupal.jornadalaboral(diaLaboral,horario_entrada,horario_salida,id_empleado) VALUES ("lunes", 1669280400, 1669323600,3);
+INSERT INTO proyectogrupal.jornadalaboral(diaLaboral,horario_entrada,horario_salida,id_empleado) VALUES ("martes", 1669280400, 1669323600,3);
+INSERT INTO proyectogrupal.jornadalaboral(diaLaboral,horario_entrada,horario_salida,id_empleado) VALUES ("miercoles", 1669280400, 1669312800,3);
+INSERT INTO proyectogrupal.jornadalaboral(diaLaboral,horario_entrada,horario_salida,id_empleado) VALUES ("jueves", 1669280400, 1669323600,3);
+INSERT INTO proyectogrupal.jornadalaboral(diaLaboral,horario_entrada,horario_salida,id_empleado) VALUES ("viernes", 1669280400, 1669312800,3);
+
+INSERT INTO proyectogrupal.jornadalaboral(diaLaboral,horario_entrada,horario_salida,id_empleado) VALUES ("lunes", 1669280400, 1669323600,3);
+INSERT INTO proyectogrupal.jornadalaboral(diaLaboral,horario_entrada,horario_salida,id_empleado) VALUES ("martes", 1669280400, 1669323600,3);
+INSERT INTO proyectogrupal.jornadalaboral(diaLaboral,horario_entrada,horario_salida,id_empleado) VALUES ("miercoles", 1669280400, 1669312800,3);
+INSERT INTO proyectogrupal.jornadalaboral(diaLaboral,horario_entrada,horario_salida,id_empleado) VALUES ("jueves", 1669280400, 1669323600,3);
+INSERT INTO proyectogrupal.jornadalaboral(diaLaboral,horario_entrada,horario_salida,id_empleado) VALUES ("viernes", 1669280400, 1669312800,3);
+
+#id_empleado 4
+
+INSERT INTO proyectogrupal.jornadalaboral(diaLaboral,horario_entrada,horario_salida,id_empleado) VALUES ("lunes", 1669280400, 1669320000,4);
+INSERT INTO proyectogrupal.jornadalaboral(diaLaboral,horario_entrada,horario_salida,id_empleado) VALUES ("martes", 1669280400, 1669323600,4);
+INSERT INTO proyectogrupal.jornadalaboral(diaLaboral,horario_entrada,horario_salida,id_empleado) VALUES ("miercoles", 1669280400, 1669320000,4);
+INSERT INTO proyectogrupal.jornadalaboral(diaLaboral,horario_entrada,horario_salida,id_empleado) VALUES ("jueves", 1669280400, 1669312800,4);
+INSERT INTO proyectogrupal.jornadalaboral(diaLaboral,horario_entrada,horario_salida,id_empleado) VALUES ("viernes", 1669280400, 1669312800,4);
+
+INSERT INTO proyectogrupal.jornadalaboral(diaLaboral,horario_entrada,horario_salida,id_empleado) VALUES ("lunes", 1669280400, 1669320000,4);
+INSERT INTO proyectogrupal.jornadalaboral(diaLaboral,horario_entrada,horario_salida,id_empleado) VALUES ("martes", 1669280400, 1669323600,4);
+INSERT INTO proyectogrupal.jornadalaboral(diaLaboral,horario_entrada,horario_salida,id_empleado) VALUES ("miercoles", 1669280400, 1669320000,4);
+INSERT INTO proyectogrupal.jornadalaboral(diaLaboral,horario_entrada,horario_salida,id_empleado) VALUES ("jueves", 1669280400, 1669312800,4);
+INSERT INTO proyectogrupal.jornadalaboral(diaLaboral,horario_entrada,horario_salida,id_empleado) VALUES ("viernes", 1669280400, 1669312800,4);
+
+INSERT INTO proyectogrupal.jornadalaboral(diaLaboral,horario_entrada,horario_salida,id_empleado) VALUES ("lunes", 1669280400, 1669320000,4);
+INSERT INTO proyectogrupal.jornadalaboral(diaLaboral,horario_entrada,horario_salida,id_empleado) VALUES ("martes", 1669280400, 1669323600,4);
+INSERT INTO proyectogrupal.jornadalaboral(diaLaboral,horario_entrada,horario_salida,id_empleado) VALUES ("miercoles", 1669280400, 1669320000,4);
+INSERT INTO proyectogrupal.jornadalaboral(diaLaboral,horario_entrada,horario_salida,id_empleado) VALUES ("jueves", 1669280400, 1669312800,4);
+INSERT INTO proyectogrupal.jornadalaboral(diaLaboral,horario_entrada,horario_salida,id_empleado) VALUES ("viernes", 1669280400, 1669312800,4);
+
+INSERT INTO proyectogrupal.jornadalaboral(diaLaboral,horario_entrada,horario_salida,id_empleado) VALUES ("lunes", 1669280400, 1669320000,4);
+INSERT INTO proyectogrupal.jornadalaboral(diaLaboral,horario_entrada,horario_salida,id_empleado) VALUES ("martes", 1669280400, 1669323600,4);
+INSERT INTO proyectogrupal.jornadalaboral(diaLaboral,horario_entrada,horario_salida,id_empleado) VALUES ("miercoles", 1669280400, 1669320000,4);
+INSERT INTO proyectogrupal.jornadalaboral(diaLaboral,horario_entrada,horario_salida,id_empleado) VALUES ("jueves", 1669280400, 1669312800,4);
+INSERT INTO proyectogrupal.jornadalaboral(diaLaboral,horario_entrada,horario_salida,id_empleado) VALUES ("viernes", 1669280400, 1669312800,4);
+
+#id_empleado 5
+
+INSERT INTO proyectogrupal.jornadalaboral(diaLaboral,horario_entrada,horario_salida,id_empleado) VALUES ("lunes", 1669280400, 1669312800,5);
+INSERT INTO proyectogrupal.jornadalaboral(diaLaboral,horario_entrada,horario_salida,id_empleado) VALUES ("martes", 1669280400, 1669312800,5);
+INSERT INTO proyectogrupal.jornadalaboral(diaLaboral,horario_entrada,horario_salida,id_empleado) VALUES ("miercoles", 1669280400, 1669312800,5);
+INSERT INTO proyectogrupal.jornadalaboral(diaLaboral,horario_entrada,horario_salida,id_empleado) VALUES ("jueves", 1669280400, 1669320000,5);
+INSERT INTO proyectogrupal.jornadalaboral(diaLaboral,horario_entrada,horario_salida,id_empleado) VALUES ("viernes", 1669280400, 1669320000,5);
+
+INSERT INTO proyectogrupal.jornadalaboral(diaLaboral,horario_entrada,horario_salida,id_empleado) VALUES ("lunes", 1669280400, 1669312800,5);
+INSERT INTO proyectogrupal.jornadalaboral(diaLaboral,horario_entrada,horario_salida,id_empleado) VALUES ("martes", 1669280400, 1669312800,5);
+INSERT INTO proyectogrupal.jornadalaboral(diaLaboral,horario_entrada,horario_salida,id_empleado) VALUES ("miercoles", 1669280400, 1669312800,5);
+INSERT INTO proyectogrupal.jornadalaboral(diaLaboral,horario_entrada,horario_salida,id_empleado) VALUES ("jueves", 1669280400, 1669320000,5);
+INSERT INTO proyectogrupal.jornadalaboral(diaLaboral,horario_entrada,horario_salida,id_empleado) VALUES ("viernes", 1669280400, 1669320000,5);
+
+INSERT INTO proyectogrupal.jornadalaboral(diaLaboral,horario_entrada,horario_salida,id_empleado) VALUES ("lunes", 1669280400, 1669312800,5);
+INSERT INTO proyectogrupal.jornadalaboral(diaLaboral,horario_entrada,horario_salida,id_empleado) VALUES ("martes", 1669280400, 1669312800,5);
+INSERT INTO proyectogrupal.jornadalaboral(diaLaboral,horario_entrada,horario_salida,id_empleado) VALUES ("miercoles", 1669280400, 1669312800,5);
+INSERT INTO proyectogrupal.jornadalaboral(diaLaboral,horario_entrada,horario_salida,id_empleado) VALUES ("jueves", 1669280400, 1669320000,5);
+INSERT INTO proyectogrupal.jornadalaboral(diaLaboral,horario_entrada,horario_salida,id_empleado) VALUES ("viernes", 1669280400, 1669320000,5);
+
+INSERT INTO proyectogrupal.jornadalaboral(diaLaboral,horario_entrada,horario_salida,id_empleado) VALUES ("lunes", 1669280400, 1669312800,5);
+INSERT INTO proyectogrupal.jornadalaboral(diaLaboral,horario_entrada,horario_salida,id_empleado) VALUES ("martes", 1669280400, 1669312800,5);
+INSERT INTO proyectogrupal.jornadalaboral(diaLaboral,horario_entrada,horario_salida,id_empleado) VALUES ("miercoles", 1669280400, 1669312800,5);
+INSERT INTO proyectogrupal.jornadalaboral(diaLaboral,horario_entrada,horario_salida,id_empleado) VALUES ("jueves", 1669280400, 1669320000,5);
+INSERT INTO proyectogrupal.jornadalaboral(diaLaboral,horario_entrada,horario_salida,id_empleado) VALUES ("viernes", 1669280400, 1669320000,5);
+
+#id_empleado 6
+
+INSERT INTO proyectogrupal.jornadalaboral(diaLaboral,horario_entrada,horario_salida,id_empleado) VALUES ("lunes", 1669280400, 1669312800,6);
+INSERT INTO proyectogrupal.jornadalaboral(diaLaboral,horario_entrada,horario_salida,id_empleado) VALUES ("martes", 1669280400, 1669320000,6);
+INSERT INTO proyectogrupal.jornadalaboral(diaLaboral,horario_entrada,horario_salida,id_empleado) VALUES ("miercoles", 1669280400, 1669312800,6);
+INSERT INTO proyectogrupal.jornadalaboral(diaLaboral,horario_entrada,horario_salida,id_empleado) VALUES ("jueves", 1669280400, 1669323600,6);
+INSERT INTO proyectogrupal.jornadalaboral(diaLaboral,horario_entrada,horario_salida,id_empleado) VALUES ("viernes", 1669280400, 1669320000,6);
+
+INSERT INTO proyectogrupal.jornadalaboral(diaLaboral,horario_entrada,horario_salida,id_empleado) VALUES ("lunes", 1669280400, 1669312800,6);
+INSERT INTO proyectogrupal.jornadalaboral(diaLaboral,horario_entrada,horario_salida,id_empleado) VALUES ("martes", 1669280400, 1669320000,6);
+INSERT INTO proyectogrupal.jornadalaboral(diaLaboral,horario_entrada,horario_salida,id_empleado) VALUES ("miercoles", 1669280400, 1669312800,6);
+INSERT INTO proyectogrupal.jornadalaboral(diaLaboral,horario_entrada,horario_salida,id_empleado) VALUES ("jueves", 1669280400, 1669323600,6);
+INSERT INTO proyectogrupal.jornadalaboral(diaLaboral,horario_entrada,horario_salida,id_empleado) VALUES ("viernes", 1669280400, 1669320000,6);
+
+INSERT INTO proyectogrupal.jornadalaboral(diaLaboral,horario_entrada,horario_salida,id_empleado) VALUES ("lunes", 1669280400, 1669312800,6);
+INSERT INTO proyectogrupal.jornadalaboral(diaLaboral,horario_entrada,horario_salida,id_empleado) VALUES ("martes", 1669280400, 1669320000,6);
+INSERT INTO proyectogrupal.jornadalaboral(diaLaboral,horario_entrada,horario_salida,id_empleado) VALUES ("miercoles", 1669280400, 1669312800,6);
+INSERT INTO proyectogrupal.jornadalaboral(diaLaboral,horario_entrada,horario_salida,id_empleado) VALUES ("jueves", 1669280400, 1669323600,6);
+INSERT INTO proyectogrupal.jornadalaboral(diaLaboral,horario_entrada,horario_salida,id_empleado) VALUES ("viernes", 1669280400, 1669320000,6);
+
+INSERT INTO proyectogrupal.jornadalaboral(diaLaboral,horario_entrada,horario_salida,id_empleado) VALUES ("lunes", 1669280400, 1669312800,6);
+INSERT INTO proyectogrupal.jornadalaboral(diaLaboral,horario_entrada,horario_salida,id_empleado) VALUES ("martes", 1669280400, 1669320000,6);
+INSERT INTO proyectogrupal.jornadalaboral(diaLaboral,horario_entrada,horario_salida,id_empleado) VALUES ("miercoles", 1669280400, 1669312800,6);
+INSERT INTO proyectogrupal.jornadalaboral(diaLaboral,horario_entrada,horario_salida,id_empleado) VALUES ("jueves", 1669280400, 1669323600,6);
+INSERT INTO proyectogrupal.jornadalaboral(diaLaboral,horario_entrada,horario_salida,id_empleado) VALUES ("viernes", 1669280400, 1669320000,6);

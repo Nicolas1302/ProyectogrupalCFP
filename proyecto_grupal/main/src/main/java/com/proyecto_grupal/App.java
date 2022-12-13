@@ -10,6 +10,7 @@ public class App
 
         jornadaController JornadaController = new jornadaController();
         EmpleadoController EmpleadoController = new EmpleadoController();
+<<<<<<< HEAD
         EmpleadoController.getEmpleado();//trae los Empleados de la Base de Datos
         // EmpleadoController.postEmpleado();//toma los Datos de Empleado.json y lo carga a la Base de Datos
         //JornadaController.getjornada();//Trae los datos de Jornada laboral de la Base De Datos
@@ -17,6 +18,13 @@ public class App
         //JornadaController.getSueldos();//Trae los Calculos de los SueldosBruto y Neto dependiendo de los Horarios de Entrada y Salida
 
         
+=======
+        EmpleadoController.postEmpleado();
+        // EmpleadoController.postEmpleado();
+        JornadaController.getjornada();
+        //JornadaController.postJornada();
+        // JornadaController.getSueldo();
+>>>>>>> 3b7f45b3f0fa3f27c556a14e6f98fb7eb9801b19
 
     }    
 }
