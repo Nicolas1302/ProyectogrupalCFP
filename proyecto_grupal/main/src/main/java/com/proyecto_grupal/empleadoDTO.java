@@ -9,8 +9,8 @@ import java.util.ArrayList;
 
 public class empleadoDTO {
     static final String BD_Conexion = "jdbc:mysql://localhost:3306/";
-    static final String Usuario_BD = "root";
-    static final String Contrasena_BD = "root";
+    static final String Usuario_BD = "root1";
+    static final String Contrasena_BD = "root1";
 
         public void saveEmpleado(String nombre, String apellido,String fecha_nacimiento){
 

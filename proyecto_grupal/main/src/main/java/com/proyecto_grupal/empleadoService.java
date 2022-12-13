@@ -8,6 +8,9 @@ public class empleadoService {
 
     public ArrayList<empleado> getEmpleados(){
         ArrayList<empleado> empleados = EmpleadoDTO.getEmpleado ();
+        System.out.println("");
+        System.out.println("Se Obtuvo los Datos de  Empleados de la Base de Datos en JSON empleadosBase.json");
+        System.out.println("");
         return empleados;
     }
     

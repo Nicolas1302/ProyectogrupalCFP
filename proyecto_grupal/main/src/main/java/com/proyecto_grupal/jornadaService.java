@@ -4,8 +4,6 @@ import java.util.ArrayList;
 
 import javax.security.auth.x500.X500Principal;
 
-import com.mysql.cj.protocol.Resultset;
-import com.mysql.cj.xdevapi.Result;
 
 public class jornadaService {
 
@@ -14,6 +12,9 @@ public class jornadaService {
     
     public ArrayList<jornada_laboral> getJornada(){
         ArrayList<jornada_laboral> Jornadas = JornadaDTO.getJornada();
+        System.out.println("");
+        System.out.println("Se Obtuvo los Datos de  JornadaLaboral de la Base de Datos en JSON jornadaBase.json");
+        System.out.println("");
         return Jornadas;
     }
 
@@ -67,7 +68,7 @@ public class jornadaService {
         horasTrabajadas.add(new horasTrabajada(horatotal4,4));
         horasTrabajadas.add(new horasTrabajada(horatotal5,5));
         horasTrabajadas.add(new horasTrabajada(horatotal6,6));
-        System.out.println(horasTrabajadas);
+        //System.out.println(horasTrabajadas);
         return horasTrabajadas;
     }
 
@@ -92,10 +93,13 @@ public class jornadaService {
             sueldos.add(new Sueldos(sueldoBruto, sueldoNeto, x+1));
             
         }
-        System.out.println(sueldos);
+        System.out.println("");
+        System.out.println("Se Obtuvo los Datos Calculados de SueldoBruto y Neto de Los Empleados Dependiendo de su Jornada Laboral en JSON SueldoBase.json");
+        System.out.println("");
+        //System.out.println(sueldos);
         return sueldos;
     }
-        //Hacer array de  las horas y hacer el sueldo
+        
     
 
     

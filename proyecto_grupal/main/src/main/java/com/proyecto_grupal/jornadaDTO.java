@@ -9,15 +9,15 @@ import java.util.ArrayList;
 
 public class jornadaDTO {
     static final String BD_Conexion = "jdbc:mysql://localhost:3306/";
-    static final String Usuario_BD = "root";
-    static final String Contrasena_BD = "root";
+    static final String Usuario_BD = "root1";
+    static final String Contrasena_BD = "root1";
     
     
     public void savejornada_laboral(String diaLaboral, int horario_entrada, int horario_salida, int id_empleado){
         
         try(Connection con = DriverManager.getConnection(BD_Conexion, Usuario_BD, Contrasena_BD);
         Statement stmt = con.createStatement()){
-            String query = "INSERT INTO proyectogrupal.jornadalaboral (diaLaboral,horario_entrada,horario_salida,id_empleado) VALUES ('" + diaLaboral + "','" + horario_entrada + "','" + horario_salida + "','" + id_empleado + "');";
+            String query = "INSERT INTO proyectogrupal.jornadaLaboral (diaLaboral,horario_entrada,horario_salida,id_empleado) VALUES ('" + diaLaboral + "','" + horario_entrada + "','" + horario_salida + "','" + id_empleado + "');";
             stmt.executeUpdate(query);
 
             System.out.println("Persistio en base de datos.");

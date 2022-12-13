@@ -24,7 +24,6 @@ public class EmpleadoController {
             Empleado.put("fecha_nacimiento",empleadoBase.get(x).getFecha_nacimiento());
             
             empleadoss.put(x,Empleado);
-            System.out.println();
             x++;
         }
 
@@ -45,7 +44,7 @@ public class EmpleadoController {
         JSONParser jsonParser = new JSONParser();
         empleadoBuilder empleadoBuilder = new empleadoBuilder();
 
-        try(FileReader reader = new FileReader("proyecto_grupal/empleados.json")){
+        try(FileReader reader = new FileReader("proyecto_grupal/empleado.json")){
             Object obj = jsonParser.parse(reader);
             JSONArray jsonEmpleados = (JSONArray) obj;
             empleado empleado1 = empleadoBuilder.builderEmpleado((JSONObject)jsonEmpleados.get(0));
