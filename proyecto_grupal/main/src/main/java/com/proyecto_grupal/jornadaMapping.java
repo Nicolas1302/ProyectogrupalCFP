@@ -7,15 +7,11 @@ public class jornadaMapping {
         return jornada;
     }
 
-    public HorasTrabajadas maphorastrabajadas(  int horasTrabajadasBD, String nombreBD,String apellidoBD){
-        if(horasTrabajadasBD > 18){
-            horasTrabajadasBD = ((horasTrabajadasBD - 18) * 5000) + (18 * 3000);
-            
-        }else if(horasTrabajadasBD <= 18){
-            horasTrabajadasBD = (horasTrabajadasBD * 3000);    
-        }
-        HorasTrabajadas Horas = new HorasTrabajadas(horasTrabajadasBD,nombreBD,apellidoBD);
-        return Horas;
+    public Sueldos mapSueldos( int SueldoBrutoBD, int SueldoNetoBD, int id_empleadoBD ){
+        Sueldos sueldo = new Sueldos(SueldoBrutoBD,SueldoNetoBD,id_empleadoBD);
+        return sueldo;
     }
+
+    
     
 }

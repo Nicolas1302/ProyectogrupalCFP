@@ -15,22 +15,22 @@ public class jornadaController {
     
     
     public void getjornada(){
-        ArrayList<jornada_laboral> SueldoBrutoBase = jornadaService.getJornada();
-        JSONObject jornadass = new JSONObject();
+        ArrayList<jornada_laboral> JornadaBase = jornadaService.getJornada();
+        JSONObject sueldoss = new JSONObject();
         int x = 0;
-        while(x < SueldoBrutoBase.size() ){ 
+        while(x < JornadaBase.size() ){ 
             JSONObject jornada = new JSONObject();           
-            jornada.put("diaLaboral", SueldoBrutoBase.get(x).getDiaLaboral());
-            jornada.put("horario_entrada", SueldoBrutoBase.get(x).getHorario_entrada());
-            jornada.put("horario_salida",SueldoBrutoBase.get(x).getHorario_salida());
-            jornada.put("id_empleado",SueldoBrutoBase.get(x).getid_empleado());           
-            jornadass.put(x,jornada);          
+            jornada.put("diaLaboral", JornadaBase.get(x).getDiaLaboral());
+            jornada.put("horario_entrada", JornadaBase.get(x).getHorario_entrada());
+            jornada.put("horario_salida",JornadaBase.get(x).getHorario_salida());
+            jornada.put("id_empleado",JornadaBase.get(x).getid_empleado());           
+            sueldoss.put(x,jornada);          
             x++;
         }
-        JSONArray SueldoBrutoList = new JSONArray();
-        SueldoBrutoList.add(jornadass);
+        JSONArray JornadaList = new JSONArray();
+        JornadaList.add(sueldoss);
         try(FileWriter file = new FileWriter("JornadasBase.json")){
-            file.write(SueldoBrutoList.toJSONString());
+            file.write(JornadaList.toJSONString());
             file.flush();
         } catch (IOException e){
             e.printStackTrace();
@@ -53,32 +53,33 @@ public class jornadaController {
         }
     }
 
-
-
-    
-
-    public void getSueldo(){
-        ArrayList<HorasTrabajadas> SueldoBrutoBase = jornadaService.gethorastrabajadas();
-        JSONObject Sueldoss = new JSONObject();
+    public void getSueldos(){
+        ArrayList<Sueldos> SueldoBase = jornadaService.getSueldo();
+        JSONObject sueldoss = new JSONObject();
         int x = 0;
-        while(x < SueldoBrutoBase.size() ){ 
-            JSONObject Sueldo = new JSONObject();           
-            Sueldo.put("Sueldo Bruto", SueldoBrutoBase.get(x).gettotal_horas());
-            Sueldo.put("Apellido", SueldoBrutoBase.get(x).getapellido());
-            Sueldo.put("nombre",SueldoBrutoBase.get(x).getnombre());                      
-            Sueldoss.put(x,Sueldo);            
+        while(x < SueldoBase.size() ){ 
+            JSONObject sueldo = new JSONObject();           
+            sueldo.put("SueldoBruto", SueldoBase.get(x).getSueldoBruto());
+            sueldo.put("SueldoNeto", SueldoBase.get(x).getSueldoNeto());
+            sueldo.put("id_empleado",SueldoBase.get(x).getid_empleado());           
+            sueldoss.put(x,sueldo);          
             x++;
         }
-        JSONArray SueldoBrutoList = new JSONArray();
-        SueldoBrutoList.add(Sueldoss);
-
-        try(FileWriter file = new FileWriter("SueldoBrutoBase.json")){
-            file.write(SueldoBrutoList.toJSONString());
+        JSONArray SueldoList = new JSONArray();
+        SueldoList.add(sueldoss);
+        try(FileWriter file = new FileWriter("SueldoBase.json")){
+            file.write(SueldoList.toJSONString());
             file.flush();
         } catch (IOException e){
             e.printStackTrace();
         }
     }
+
+
+
+    
+
+    
 
     
 }
